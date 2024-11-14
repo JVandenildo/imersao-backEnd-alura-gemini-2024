@@ -2,7 +2,7 @@
 
 ## Links da quarta aula
 
-- [Código da segunda aula](https://github.com/alura-cursos/logica-js/tree/aula_3);
+- [Código da terceira aula](https://github.com/alura-cursos/logica-js/tree/aula_3);
 - [Documentação do JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript);
 - [Documentação do método `Math.random()`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/random);
 - [Documentação do JavaScript no W3School](https://www.w3schools.com/js/default.asp).
