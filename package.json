@@ -1,0 +1,33 @@
+{
+  "name": "imersao_backend_alura-gemini_2024",
+  "version": "1.0.0",
+  "description": "Códigos da imersão Back-End 2024 da Alura em parceria com Google.",
+  "main": "index.js",
+  "type": "module",
+  "license": "AGPL-version-3.0",
+  "private": false,
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "keywords": [],
+  "author": {
+    "name": "JVandenildo",
+    "email": "",
+    "url": "https://github.com/JVandenildo"
+  },
+  "contributors": [],
+  "scripts": {
+    "dev": "",
+    "test": ""
+  },
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
