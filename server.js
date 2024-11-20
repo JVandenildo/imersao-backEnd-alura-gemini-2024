@@ -1,44 +1,33 @@
 import express from "express";
+import conectarAoBanco from "./src/config/dbConfig.js";
 
-const posts = [
-  {
-    id: 1,
-    descricao: "Uma foto teste",
-    imagem: "http://placecats.com/millie/300/150",
-  },
-  {
-    id: 2,
-    descricao: "Gato fazendo yoga",
-    imagem: "http://placecats.com/millie/300/150",
-  },
-  {
-    id: 3,
-    descricao: "Gatinho fazendo panqueca",
-    imagem: "http://placecats.com/millie/300/150",
-  },
-];
-
+// Establish a database connection using the provided connection string
+const conexao = await conectarAoBanco(process.env.STRING_CONEXAO);
+// Create an Express app
 const app = express();
+// Middleware to parse JSON request bodies
 app.use(express.json());
 
+// Start the server on port 3000
 app.listen(3000, () => {
   console.log("Servidor escutando...");
 });
 
-app.get("/posts", (req, res) => {
-  res.status(200).json(posts);
-});
+// Asynchronous function to fetch all posts from the database
+async function getTodosPosts() {
+  // Select the 'projeto-imersaoAlura2024' database
+  const db = conexao.db("projeto-imersaoAlura2024");
+  // Select the 'posts' collection
+  const colecao = db.collection("posts");
 
-/**
- * @param {number} id
- */
-function buscarPostPorID(id) {
-  return posts.findIndex((post) => {
-    return post.id === Number(id);
-  });
+  // Find all documents in the 'posts' collection and return them as an array
+  return colecao.find().toArray();
 }
 
-app.get("/posts/:id", (req, res) => {
-  const index = buscarPostPorID(req.params.id);
-  res.status(200).json(posts[index]);
+// Define a GET route to retrieve all posts
+app.get("/posts", async (req, res) => {
+  // Fetch all posts using the asynchronous function
+  const posts = await getTodosPosts();
+  // Send the posts as a JSON response with a 200 OK status code
+  res.status(200).json(posts);
 });
