@@ -13,3 +13,10 @@ export async function getTodosPosts() {
   // Find all documents in the 'posts' collection and return them as an array
   return colecao.find().toArray();
 }
+
+export async function criarPost(novoPost) {
+  const db = conexao.db("projeto-imersaoAlura2024");
+  const colecao = db.collection("posts");
+
+  return colecao.insertOne(novoPost);
+}
