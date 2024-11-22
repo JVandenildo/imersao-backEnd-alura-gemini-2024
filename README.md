@@ -9,11 +9,12 @@ Antes da imersão propriamente dita, a Alura forneceu aulas introdutórias de l�
 
 - [Guia da imersão](https://grupoalura.notion.site/imersao-dev-back-end-guia-de-mergulho) no Notion;
 - 14/11 - [live de abertura](https://www.youtube.com/live/wzNYtHI6JWo?si=bI4FiSqISHVv0JnQ) no canal da [Alura](https://www.youtube.com/@alura) no YouTube;
-- 18/11 - primeira aula, Desvendando APIs e Servidores;
-- 19/11 - segunda aula;
-- 20/11 - terceira aula;
-- 21/11 - quarta aula;
-- 22/11 - quinta aula.
+- 18/11 - primeira aula (Desvendando APIs e Servidores);
+- 19/11 - segunda aula (Criando e Estruturando sua Primeira API com GET e Banco de Dados);
+- 20/11 - terceira aula (Conectando sua API ao MongoDB: Estrutura, Conexão e Refatoração);
+- 21/11 - quarta aula (Implementando Armazenamento e Upload de Imagens);
+- 21/11 - [live intermediária](https://www.youtube.com/live/KvG54sFZXhE?si=HH00CjqFAdamGIiU) no canal da [Alura](https://www.youtube.com/@alura) no YouTube sobre carreira dev;
+- 22/11 - quinta aula (Publicando na Google Cloud: Configuração de API e Integração com Gemini).
 
 ### Outros links
 

@@ -3,6 +3,7 @@ import routes from "./src/routes/postsRoutes.js";
 
 // Create an Express app
 const app = express();
+app.use(express.static("uploads"));
 routes(app);
 
 // Start the server on port 3000

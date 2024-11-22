@@ -1,3 +1,4 @@
+import { ObjectId } from "mongodb";
 import conectarAoBanco from "../config/dbConfig.js";
 
 // Establish a database connection using the provided connection string
@@ -19,4 +20,12 @@ export async function criarPost(novoPost) {
   const colecao = db.collection("posts");
 
   return colecao.insertOne(novoPost);
+}
+
+export async function atualizarPost(id, novoPost) {
+  const db = conexao.db("projeto-imersaoAlura2024");
+  const colecao = db.collection("posts");
+  const objID = ObjectId.createFromHexString(id);
+
+  return colecao.updateOne({ _id: new ObjectId(objID) }, { $set: novoPost });
 }

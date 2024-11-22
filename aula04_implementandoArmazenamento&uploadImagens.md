@@ -1,4 +1,4 @@
-# Aula 03 – Implementando Armazenamento e Upload de Imagens
+# Aula 04 – Implementando Armazenamento e Upload de Imagens
 
 Foco na implementação de imagens no projeto, além de testar a API com o Postman.
 
