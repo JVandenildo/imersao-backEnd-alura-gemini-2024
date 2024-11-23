@@ -14,7 +14,8 @@ Antes da imersão propriamente dita, a Alura forneceu aulas introdutórias de l�
 - 20/11 - terceira aula (Conectando sua API ao MongoDB: Estrutura, Conexão e Refatoração);
 - 21/11 - quarta aula (Implementando Armazenamento e Upload de Imagens);
 - 21/11 - [live intermediária](https://www.youtube.com/live/KvG54sFZXhE?si=HH00CjqFAdamGIiU) no canal da [Alura](https://www.youtube.com/@alura) no YouTube sobre carreira dev;
-- 22/11 - quinta aula (Publicando na Google Cloud: Configuração de API e Integração com Gemini).
+- 22/11 - quinta aula (Publicando na Google Cloud: Configuração de API e Integração com Gemini);
+- 25/11 – [live de encerramento](https://www.youtube.com/live/clfwxY3Kfss?si=IduKwTkZZ8nGw59G) no canal da [Alura](https://www.youtube.com/@alura) no YouTube.
 
 ### Outros links
 
